@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: dynamo-db-demo
+
+server:
+  port: 5000
+
+aws:
+  dynamodb:
+    accessKey:
+    secretKey:
+    region:
+    endpoint:

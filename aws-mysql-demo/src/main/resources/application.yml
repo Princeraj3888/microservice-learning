@@ -1,0 +1,41 @@
+#spring:
+#  application:
+#    name: aws-mysql-demo
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/new_schema
+#    username: root
+#    password: lomatech
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: create
+#    database-platform: org.hibernate.dialect.MySQL8Dialect
+#    properties:
+#      max_allowed_packet: 2000
+
+spring:
+  application:
+    name: aws-mysql-demo
+  #datasource:
+    #url: jdbc:mysql://explorertechdb.cv42c44y6g0c.ap-southeast-2.rds.amazonaws.com:3306/explorertech
+    #username: root
+    #password: lomatech
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      max_allowed_packet: 2000
+
+cloud:
+  aws:
+    region:
+      static: ap-southeast-2
+      auto: false
+    credentials:
+      access-key:
+      secret-key:
+
+server:
+  port: 5010
