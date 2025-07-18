@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: currency-exchange
+
+  config:
+    import:
+      - optional:configserver:http://localhost:8888
+
+  datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/new_schema
+      username: root
+      password: lomatech
+  jpa:
+      show-sql: true
+      hibernate:
+        ddl-auto: update
+      database-platform: org.hibernate.dialect.MySQL8Dialect
+      properties:
+        max_allowed_packet: 2000
