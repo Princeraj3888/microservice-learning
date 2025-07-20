@@ -1,0 +1,10 @@
+cloud:
+  aws:
+    region:
+      static: ap-southeast-2
+      auto: false
+    credentials:
+      access-key:
+      secret-key:
+    end-point:
+      uri: https://sqs.ap-southeast-2.amazonaws.com/796973505063/explorer-queue.fifo
