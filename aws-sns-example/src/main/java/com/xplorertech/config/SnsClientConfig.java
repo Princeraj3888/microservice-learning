@@ -1,0 +1,36 @@
+package com.xplorertech.config;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+import software.amazon.awssdk.auth.credentials.AwsBasicCredentials;
+import software.amazon.awssdk.auth.credentials.StaticCredentialsProvider;
+import software.amazon.awssdk.regions.Region;
+import software.amazon.awssdk.services.sns.SnsClient;
+
+
+@Configuration
+public class SnsClientConfig {
+
+    @Value("${cloud.aws.region.static}")
+    private String region;
+
+    @Value("${cloud.aws.credentials.access-key}")
+    private String awsAccessKey;
+
+    @Value("${cloud.aws.credentials.secret-key}")
+    private String awsSecretKey;
+
+    @Value("${cloud.aws.end-point.uri}")
+    private String topicArn;
+
+    @Bean
+    public SnsClient snsClient(){
+        return SnsClient.builder()
+                .region(Region.AP_SOUTHEAST_2)
+                .credentialsProvider(StaticCredentialsProvider.create(
+                        AwsBasicCredentials.create(awsAccessKey, awsSecretKey)
+                )).build();
+    }
+}

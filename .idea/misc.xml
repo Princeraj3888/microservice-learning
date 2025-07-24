@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/currency-conversion-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-config-server/pom.xml" />
         <option value="$PROJECT_DIR$/aws-sqs-exe-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/aws-sns-example/pom.xml" />
       </list>
     </option>
   </component>
