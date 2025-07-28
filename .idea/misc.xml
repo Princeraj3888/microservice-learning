@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/spring-cloud-config-server/pom.xml" />
         <option value="$PROJECT_DIR$/aws-sqs-exe-demo/pom.xml" />
         <option value="$PROJECT_DIR$/aws-sns-example/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-function-example/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-aws-lambda/pom.xml" />
       </list>
     </option>
   </component>
