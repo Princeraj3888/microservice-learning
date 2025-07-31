@@ -14,10 +14,12 @@
         <option value="$PROJECT_DIR$/aws-sns-example/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-function-example/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-aws-lambda/pom.xml" />
+        <option value="$PROJECT_DIR$/retail-discount-engine/pom.xml" />
+        <option value="$PROJECT_DIR$/api-gateway/api-gateway/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="ProjectType">

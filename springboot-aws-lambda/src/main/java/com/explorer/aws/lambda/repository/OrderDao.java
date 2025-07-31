@@ -12,11 +12,11 @@ public class OrderDao {
 
     public List<Order>  buildOrders(){
         return Stream.of(
-                new Order(101, "Mobile", 52201, 1),
-                new Order(102, "Book", 4031, 1),
-                new Order(103, "Book", 2000, 3),
-                new Order(104, "Shoes", 4000, 2),
-                new Order(105, "Laptop", 60000, 1)
+                new Order(101, "Mobile", 52201.00, 1),
+                new Order(102, "Book", 4031.00, 1),
+                new Order(103, "Book", 2000.00, 3),
+                new Order(104, "Shoes", 4000.00, 2),
+                new Order(105, "Laptop", 60000.00, 1)
         ).collect(Collectors.toList());
     }
 }

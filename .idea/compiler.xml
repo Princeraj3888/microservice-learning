@@ -11,9 +11,11 @@
         <module name="aws-sns-example" />
         <module name="currency-conversion-service" />
         <module name="spring-cloud-config-server" />
+        <module name="api-gateway" />
         <module name="currency-exchange-service" />
         <module name="limits-service" />
         <module name="spring-cloud-function-example" />
+        <module name="naming-server" />
       </profile>
       <profile name="Annotation profile for springboot-aws-lambda" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -22,13 +24,10 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
+        <module name="retail-discount-engine" />
         <module name="springboot-aws-lambda" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="api-gateway" target="17" />
-      <module name="naming-server" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -39,6 +38,7 @@
       <module name="currency-exchange-service" options="-parameters" />
       <module name="limits-service" options="-parameters" />
       <module name="naming-server" options="-parameters" />
+      <module name="retail-discount-engine" options="-parameters" />
       <module name="spring-cloud-config-server" options="-parameters" />
       <module name="spring-cloud-function-example" options="-parameters" />
       <module name="springboot-aws-lambda" options="-parameters" />
