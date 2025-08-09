@@ -11,6 +11,7 @@
         <module name="aws-sqs-exe-demo" />
         <module name="aws-sns-example" />
         <module name="currency-conversion-service" />
+        <module name="aws-apigateway-example" />
         <module name="spring-cloud-config-server" />
         <module name="api-gateway" />
         <module name="currency-exchange-service" />
@@ -18,15 +19,15 @@
         <module name="spring-cloud-function-example" />
         <module name="naming-server" />
       </profile>
-      <profile name="Annotation profile for springboot-aws-lambda" enabled="true">
+      <profile name="Annotation profile for explore-tech-security" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
-        <module name="aws-apigateway-example" />
         <module name="retail-discount-engine" />
+        <module name="explore-tech-security" />
         <module name="springboot-aws-lambda" />
       </profile>
     </annotationProcessing>
@@ -34,15 +35,16 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-gateway" options="-parameters" />
-      <module name="aws-apigateway-example" options="-parameters" />
+      <module name="aws-apigateway-example" options="" />
       <module name="aws-sns-example" options="-parameters" />
       <module name="aws-sqs-exe-demo" options="-parameters" />
       <module name="currency-conversion-service" options="-parameters" />
       <module name="currency-exchange-service" options="-parameters" />
+      <module name="explore-tech-security" options="-parameters" />
       <module name="limits-service" options="-parameters" />
       <module name="naming-server" options="-parameters" />
       <module name="retail-discount-engine" options="-parameters" />
-      <module name="spring-boot-lambda" options="-parameters" />
+      <module name="spring-boot-lambda" options="" />
       <module name="spring-cloud-config-server" options="-parameters" />
       <module name="spring-cloud-function-example" options="-parameters" />
       <module name="springboot-aws-lambda" options="-parameters" />
