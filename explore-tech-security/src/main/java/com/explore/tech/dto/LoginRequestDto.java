@@ -1,2 +1,11 @@
-package com.explore.tech.dto;public class LoginRequestDto {
+package com.explore.tech.dto;
+
+import lombok.Data;
+
+@Data
+public class LoginRequestDto {
+
+    private String username;
+    private String password;
+
 }

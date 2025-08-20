@@ -1,4 +1,4 @@
-package com.explore.tech;
+package com.explore.tech.repository;
 
 import com.explore.tech.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
