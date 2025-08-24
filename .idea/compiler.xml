@@ -7,14 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="aws-explorer" />
-        <module name="spring-cloud-config-server" />
-        <module name="springboot-docker-aws-ecs" />
         <module name="spring-boot-lambda" />
         <module name="aws-sqs-exe-demo" />
         <module name="aws-sns-example" />
+        <module name="aws-explorer" />
         <module name="currency-conversion-service" />
+        <module name="spring-cloud-config-server" />
         <module name="api-gateway" />
+        <module name="springboot-docker-aws-ecs" />
         <module name="currency-exchange-service" />
         <module name="limits-service" />
         <module name="spring-cloud-function-example" />
