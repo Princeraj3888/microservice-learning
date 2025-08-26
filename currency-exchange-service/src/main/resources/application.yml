@@ -8,9 +8,9 @@ spring:
 
   datasource:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/cms
+      url: jdbc:mysql://localhost:3306/new_schema
       username: root
-      password: mysqlpassword
+      password: lomatech
   jpa:
       show-sql: true
       hibernate:

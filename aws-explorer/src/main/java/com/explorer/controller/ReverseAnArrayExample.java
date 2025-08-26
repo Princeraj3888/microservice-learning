@@ -2,6 +2,7 @@ package com.explorer.controller;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class ReverseAnArrayExample {
@@ -11,22 +12,22 @@ public class ReverseAnArrayExample {
 
         System.out.println("original array: "+Arrays.toString(arr));
 
-        //reverseArrayUsingTempVariable(arr);
-        reverseArrayUsingStreams(arr);
+        reverseArrayUsingTempVariable(arr);
+        //reverseArrayUsingStreams(arr);
 
     }
 
     private static void reverseArrayUsingStreams(int[] arr) {
-        List<Integer> reverseList = IntStream.range(0, arr.length)
+        List<Integer> reverseList = IntStream.rangeClosed(0, arr.length-1)
                 .mapToObj(i -> arr[arr.length-1-i])
-                .toList();
+                .collect(Collectors.toList());
 
         System.out.println("reverseList: "+reverseList);
     }
 
     private static void reverseArrayUsingTempVariable(int[] arr) {
         int start = 0;
-        int end = arr.length-1;
+        int end = arr.length -1;
 
         while(start<end){
             int temp = arr[start];
