@@ -22,6 +22,7 @@
         <option value="$PROJECT_DIR$/springboot-docker-aws-ecs/pom.xml" />
         <option value="$PROJECT_DIR$/aws-explorer/pom.xml" />
         <option value="$PROJECT_DIR$/file-storage-service/pom.xml" />
+        <option value="$PROJECT_DIR$/google-oauth-service/pom.xml" />
       </list>
     </option>
   </component>
