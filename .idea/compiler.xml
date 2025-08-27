@@ -18,8 +18,8 @@
         <module name="api-gateway" />
         <module name="currency-exchange-service" />
         <module name="limits-service" />
-        <module name="spring-cloud-function-example" />
         <module name="naming-server" />
+        <module name="spring-cloud-function-example" />
       </profile>
       <profile name="Annotation profile for springboot-aws-lambda" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -28,7 +28,6 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
-        <module name="retail-discount-engine" />
         <module name="file-storage-service" />
         <module name="aws-apigateway-example" />
         <module name="explore-tech-security" />
@@ -50,7 +49,6 @@
       <module name="google-oauth-service" options="-parameters" />
       <module name="limits-service" options="-parameters" />
       <module name="naming-server" options="-parameters" />
-      <module name="retail-discount-engine" options="-parameters" />
       <module name="spring-boot-lambda" options="-parameters" />
       <module name="spring-cloud-config-server" options="-parameters" />
       <module name="spring-cloud-function-example" options="-parameters" />
