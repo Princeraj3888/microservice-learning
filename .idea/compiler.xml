@@ -16,6 +16,7 @@
         <module name="aws-sns-example" />
         <module name="currency-conversion-service" />
         <module name="api-gateway" />
+        <module name="oauth-gzxing-service" />
         <module name="currency-exchange-service" />
         <module name="limits-service" />
         <module name="naming-server" />
@@ -49,6 +50,7 @@
       <module name="google-oauth-service" options="-parameters" />
       <module name="limits-service" options="-parameters" />
       <module name="naming-server" options="-parameters" />
+      <module name="oauth-gzxing-service" options="-parameters" />
       <module name="spring-boot-lambda" options="-parameters" />
       <module name="spring-cloud-config-server" options="-parameters" />
       <module name="spring-cloud-function-example" options="-parameters" />

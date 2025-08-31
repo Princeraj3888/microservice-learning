@@ -21,6 +21,8 @@
     <file url="file://$PROJECT_DIR$/limits-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/limits-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/naming-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-gzxing-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth-gzxing-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/retail-discount-engine/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-config-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-function-example/src/main/java" charset="UTF-8" />
