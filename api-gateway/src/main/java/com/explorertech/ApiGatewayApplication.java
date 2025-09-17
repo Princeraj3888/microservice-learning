@@ -1,4 +1,4 @@
-package com.explorer.api_gateway;
+package com.explorertech;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

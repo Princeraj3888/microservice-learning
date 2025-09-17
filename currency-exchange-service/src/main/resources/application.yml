@@ -8,9 +8,9 @@ spring:
 
   datasource:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/new_schema
+      url: jdbc:mysql://localhost:3306/cms
       username: root
-      password: lomatech
+      password: mysqlpassword
   jpa:
       show-sql: true
       hibernate:
@@ -18,3 +18,14 @@ spring:
       database-platform: org.hibernate.dialect.MySQL8Dialect
       properties:
         max_allowed_packet: 2000
+
+resilience4j:
+  retry:
+    instances:
+      sample-api:
+        maxAttempts: 5
+        waitDuration: 1s
+        enableExponentialBackoff: true
+
+server:
+  port: 8000

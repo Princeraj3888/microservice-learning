@@ -1,4 +1,4 @@
-package com.explorer.api_gateway;
+package com.explorertech;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
