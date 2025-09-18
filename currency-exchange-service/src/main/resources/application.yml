@@ -26,6 +26,30 @@ resilience4j:
         maxAttempts: 5
         waitDuration: 1s
         enableExponentialBackoff: true
-
+  circuitbreaker:
+    instances:
+      sample-api:
+        registerHealthIndicator: true
+        slidingWindowSize: 10
+        permittedNumberOfCallsInHalfOpenState: 3
+        slidingWindowType: TIME_BASED
+        minimumNumberOfCalls: 20
+        waitDurationInOpenState: 50s
+        failureRateThreshold: 50
+        eventConsumerBufferSize: 10
+        #recordFailurePredicate: io.github.robwin.exception.RecordFailurePredicate
+  ratelimiter:
+    instances:
+      default:
+        limitForPeriod: 2
+        limitRefreshPeriod: 10s
+  bulkhead:
+    instances:
+      sample-api:
+        maxConcurrentCalls: 10
+        maxWaitDuration: 0 # how long extra calls should wait for a slot
+      sampleBulkheadDemo:
+        maxConcurrentCalls: 2
+        maxWaitDuration: 0
 server:
   port: 8000
