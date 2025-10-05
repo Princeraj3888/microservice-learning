@@ -30,6 +30,5 @@ public class AuthUtil {
                 .expiration(new Date(System.currentTimeMillis() + 1000*60*10))
                 .signWith(getSecretKey())
                 .compact();
-
     }
 }
